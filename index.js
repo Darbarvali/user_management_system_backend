@@ -1,12 +1,14 @@
 const express = require('express');
 const fs = require('fs');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-const DB_FILE_PATH = './users.json';
+const DB_FILE_PATH = path.join(process.cwd(), 'users.json');
+
 
 // GET /users
 app.get('/users', (req, res) => {
