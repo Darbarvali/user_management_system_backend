@@ -77,6 +77,6 @@ function generateUserId() {
 return Math.floor(Math.random() * 1000) + 1;
 }
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(3000, () => {
     console.log("Backend server is running!");
   });
