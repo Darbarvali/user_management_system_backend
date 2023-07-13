@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const DB_FILE_PATH = '/users.json';
+const DB_FILE_PATH = './users.json';
 
 // GET /users
 app.get('/users', (req, res) => {
