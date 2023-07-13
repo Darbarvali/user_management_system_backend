@@ -77,7 +77,5 @@ function generateUserId() {
 return Math.floor(Math.random() * 1000) + 1;
 }
 
-app.listen(3000, () => {
-console.log('Backend server is running on port 3000');
-});
+
 module.exports = app;
